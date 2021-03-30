@@ -41,13 +41,14 @@
     <table class="table">
         <thead>
             <tr>
+            <th scope="col">*</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Sobrenome</th>
-                <th scope="col">telefone</th>
                 <th scope="col">email</th>
+                <th scope="col">telefone</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col"></th>
+              
             </tr>
         </thead>
         <tbody>
@@ -57,8 +58,8 @@
                 echo " <th scope='row'>$obj->idcodigo</th>";
                 echo " <td>$obj->nome</td>";
                 echo " <td>$obj->sobrenome</td>";
-                echo "<td>$obj->telefone</td>";
                 echo "<td>$obj->email</td>";
+                echo "<td>$obj->telefone</td>";
                 echo "<td><a class='btn btn-primary' href='deletar.php?id=$obj->idcodigo'>DELETAR</a>";
                 echo "<td><a class='btn btn-primary' href='editar.php?id=$obj->idcodigo'>EDITAR</a>";
                 
