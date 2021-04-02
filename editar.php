@@ -14,7 +14,7 @@
 include "conexao.php";
 
 if(isset($_GET["id"])){
-    $id=(int)$_GET["id"];
+    $id=intval($_GET["id"]);
 
 
 $sql="SELECT * FROM novo WHERE idcodigo=$id";
@@ -57,6 +57,7 @@ $usuario = $res->fetch_object();
 
 
 <?php
+
 
 if(isset($_POST["id"])){
 $id=$_POST['id'];

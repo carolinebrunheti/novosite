@@ -6,7 +6,8 @@ include "conexao.php";
 
 if(isset($_GET["id"])){
 
-$id=(int)$_GET["id"];
+    //intval= vai pegar o valor do id e armazenar em um inteiro, metodo de segurança, pode ser usado para qualquer variavel de fora
+$id=intval($_GET["id"]);
 $sql="DELETE from novo WHERE idcodigo=$id";
 if (!$res = $mysqli->query($sql)) {
     // Oh no! The query failed. 
